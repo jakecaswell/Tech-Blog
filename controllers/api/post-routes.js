@@ -4,7 +4,7 @@ const { User, Post, Comment } = require('../../models');
 // get all posts 'api/posts/
 router.get('/', (req, res) => {
     Post.findAll({
-        attributes: ['id', 'post_url', 'title', 'created_at'],
+        attributes: ['id', 'blog_text', 'title', 'created_at'],
         include: [
             {
                 model: Comment,
@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'post_url', 'title', 'created_at'],
+        attributes: ['id', 'blog_text', 'title', 'created_at'],
         include: [
             {
                 model: Comment,
@@ -119,4 +119,4 @@ router.delete('/:id', (req, res) => {
     })
 })
 
-module.export = router; 
+module.exports = router; 

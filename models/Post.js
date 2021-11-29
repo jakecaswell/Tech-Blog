@@ -15,12 +15,9 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isUrl: true
-            }
+        blog_text: {
+            type: DataTypes.TEXT,
+            allowNull: false
         },
         user_id: {
             type: DataTypes.INTEGER,

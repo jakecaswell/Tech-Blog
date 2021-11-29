@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
         include: [
             {
                 model: Post,
-                attributes: ['id', 'title', 'post_url', 'created_at']
+                attributes: ['id', 'title', 'blog_text', 'created_at']
             }
         ]
     })
@@ -104,4 +104,4 @@ router.post('/logout', (req, res) => {
     }
 })
 
-module.export = router;
+module.exports = router;
