@@ -51,53 +51,183 @@ html, body {
 
 }
 
+
+
 .login-form {
-    border: 3px solid blue;
+    border: 3px solid #00008b;
     border-radius: 5px;
     padding: 2rem;
     width: 25%;
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
+    overflow: hidden;
 }
-
+.login-label h2 {
+    position: relative;
+    left: 200px;
+}
 .login-form div {
     padding: .5rem;
 
 }
 
 .login-form div #email-login {
-    width: 42%;
+    width: 80%;
+}
+.login-form div #password-login {
+    width: 75%;
 }
 
 .login-form button {
     padding: .5rem;
     position: absolute;
-    left: 350px;
+}
+.signup-label h2 {
+    position: relative;
+    left: 200px;
 }
 
 .signup-form {
-    border: 3px solid blue;
+    border: 3px solid #00008b;
     border-radius: 5px;
     padding: 2rem;
     width: 25%;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 .signup-form div {
     padding: .5rem;
 }
 
+.signup-form div #username-signup {
+    width: 75%;
+}
 .signup-form div #email-signup {
-    width: 42%;
+    width: 80%;
+}
+.signup-form div #password-signup {
+    width: 75%;
 }
 
 .signup-form button {
     padding: .5rem;
     position: absolute;
-    left: 350px;
 }
 
+.post-list {
+    list-style: none;
+}
+
+.post-list a {
+    text-decoration: none;
+}
+
+.post {
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 2rem 2rem 2rem 0;
+}
+
+.post .title {
+    background-color: #00008b;
+    padding: 1px;
+    
+}
+.post .title a {
+    color: white;
+    margin-left: 10px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.post .blog-text {
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.post .meta {
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.post .meta a {
+    color: black;
+}
+
+.user-posts li{
+    list-style: none;
+}
+
+.user-posts li a {
+    text-decoration: none;
+}
+
+.user-posts .edit-link {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 1rem;
+    color: black;
+    font-size: 18px;
+}
+
+.user-posts .edit-link:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #00008b;
+    padding: 1rem;
+    color: white;
+}
+
+.new-post-form {
+    border: 3px solid #00008b;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 25%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.new-post-form button {
+    padding: .5rem;
+    margin-top: 5px;
+}
+
+.new-post-form #post-title {
+    width: 91%;
+    margin-bottom: 10px;
+}
+.new-post-form #post-text {
+    width: 80%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.comment-form button {
+    padding: .5rem;
+    margin: 10px 0 10px 15px;
+}
+
+.comments .comment {
+    border-bottom: 1px solid black;
+    padding: 1em;
+}
+
+.comments .comment .meta{
+    margin-bottom: 3px;
+}
+
+.comments .comment .text { 
+    font-size: 18px;
+    padding: 5px;
+}
 
 footer {
     position: absolute;
