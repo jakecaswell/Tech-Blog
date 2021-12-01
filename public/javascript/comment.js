@@ -16,7 +16,7 @@ async function newComment(event) {
             headers: { 'Content-Type': 'application/json' }
         })
         if(response.ok) {
-            document.location.reload()
+            document.location.reload();
         } else {
             alert(response.statusText)
         }

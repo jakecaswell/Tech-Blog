@@ -7,13 +7,14 @@ async function editPost(event) {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ]
+    console.log(id);
 
-    const response = await fetch(`/api/post/${id}`, {
+    const response = await fetch(`/api/posts/${id}`, {
         method: 'PUT', 
         body: JSON.stringify({
             post_id: id,
             title, 
-            content
+            blog_text
         }),
         headers: { 'Content-Type': 'application/json' }
     })

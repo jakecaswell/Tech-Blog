@@ -60,7 +60,7 @@ router.get('/edit/:id', (req, res) => {
             return;
         }
         const post = dbPostData.get({ plain: true });
-        res.render('edit-post', { post, loggedIn: req.sessions.loggedIn })
+        res.render('edit-post', { post, loggedIn: true })
     })
     .catch(err => {
         console.log(err);

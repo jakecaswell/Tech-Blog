@@ -1,0 +1,109 @@
+header h1 {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: #00008b;
+}
+
+.navbar h1  {
+    padding: 1rem;
+}
+
+.navbar h1 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links {
+    padding: 1rem;
+    margin: 0px 1rem 0px 0px;
+}
+
+.navbar-links #logout {
+    margin-left: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.navbar-links #logout:hover {
+    margin-left: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: darkgrey;
+
+}
+
+.login-form {
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 25%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.login-form div {
+    padding: .5rem;
+
+}
+
+.login-form div #email-login {
+    width: 42%;
+}
+
+.login-form button {
+    padding: .5rem;
+    position: absolute;
+    left: 350px;
+}
+
+.signup-form {
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 25%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.signup-form div {
+    padding: .5rem;
+}
+
+.signup-form div #email-signup {
+    width: 42%;
+}
+
+.signup-form button {
+    padding: .5rem;
+    position: absolute;
+    left: 350px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
